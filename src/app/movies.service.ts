@@ -10,7 +10,7 @@ export class MoviesService {
   
   movie!:Movies
   movieName:string=''
-  private url='https://localhost:7083/api/v1/moviebooking';
+  private url='https://movieticketmaster.azurewebsites.net/api/v1/moviebooking';
   constructor(private httpClient:HttpClient) { }
 
   getAllMovies():Observable<any[]>{
