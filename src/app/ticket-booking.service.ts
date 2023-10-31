@@ -9,7 +9,7 @@ import { Tickets } from './Tickets';
 })
 export class TicketBookingService {
 
-  private url='https://movieticketmaster.azurewebsites.net/api/v1/moviebooking';
+  private url='https://moviebookingvishwa.azurewebsites.net/api/v1/moviebooking';
   constructor(private httpClient:HttpClient) { }
   bookTickets(movie:Movies,nofoTickets:any){
     return this.httpClient.post(this.url+'/'+movie.movieName+'/add/'+nofoTickets,{ responseType: 'text' })
